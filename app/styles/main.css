@@ -10,15 +10,16 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: black;
-
+    background-image: url("../images/Tatooine.jpg");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-size: 100%;
 }
 
 main {
     width: 1200px;
     height: 900px;
-    background-image: url("../images/Tatooine.jpg");
-    background-repeat: no-repeat;
-    margin: 0 auto;
+
 
 }
 
