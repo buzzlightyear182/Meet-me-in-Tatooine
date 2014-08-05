@@ -1,16 +1,8 @@
 {
-<<<<<<< HEAD
   "name": "meet-me-client",
   "private": true,
   "dependencies": {
     "bootstrap": "~3.0.3",
-=======
-  "name": "meet-me-3-0",
-  "private": true,
-  "dependencies": {
-    "bootstrap-sass-official": "~3.1.0",
-    "modernizr": "~2.6.2",
->>>>>>> b80124ae22185bcc8be3679e6cc6f33b2c938b08
     "jquery": "~1.11.0"
   },
   "devDependencies": {}

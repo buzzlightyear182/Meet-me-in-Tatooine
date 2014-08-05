@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 // Generated on 2014-08-04 using generator-webapp 0.4.9
-=======
-// Generated on 2014-08-05 using generator-webapp 0.4.9
->>>>>>> b80124ae22185bcc8be3679e6cc6f33b2c938b08
 'use strict';
 
 // # Globbing
@@ -32,11 +28,7 @@ module.exports = function (grunt) {
         config: config,
 
         // Watches files for changes and runs tasks based on the changed files
-<<<<<<< HEAD
         watch: {
-=======
-        watch: {//to modify auto the files css,js
->>>>>>> b80124ae22185bcc8be3679e6cc6f33b2c938b08
             bower: {
                 files: ['bower.json'],
                 tasks: ['bowerInstall']
@@ -55,13 +47,6 @@ module.exports = function (grunt) {
             gruntfile: {
                 files: ['Gruntfile.js']
             },
-<<<<<<< HEAD
-=======
-            sass: {
-                files: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
-                tasks: ['sass:server', 'autoprefixer']
-            },
->>>>>>> b80124ae22185bcc8be3679e6cc6f33b2c938b08
             styles: {
                 files: ['<%= config.app %>/styles/{,*/}*.css'],
                 tasks: ['newer:copy:styles', 'autoprefixer']
@@ -159,36 +144,6 @@ module.exports = function (grunt) {
             }
         },
 
-<<<<<<< HEAD
-=======
-        // Compiles Sass to CSS and generates necessary files if requested
-        sass: {
-            options: {
-                loadPath: [
-                    'bower_components'
-                ]
-            },
-            dist: {
-                files: [{
-                    expand: true,
-                    cwd: '<%= config.app %>/styles',
-                    src: ['*.scss'],
-                    dest: '.tmp/styles',
-                    ext: '.css'
-                }]
-            },
-            server: {
-                files: [{
-                    expand: true,
-                    cwd: '<%= config.app %>/styles',
-                    src: ['*.scss'],
-                    dest: '.tmp/styles',
-                    ext: '.css'
-                }]
-            }
-        },
-
->>>>>>> b80124ae22185bcc8be3679e6cc6f33b2c938b08
         // Add vendor prefixed styles
         autoprefixer: {
             options: {
@@ -208,14 +163,7 @@ module.exports = function (grunt) {
         bowerInstall: {
             app: {
                 src: ['<%= config.app %>/index.html'],
-<<<<<<< HEAD
                 exclude: ['bower_components/bootstrap/dist/js/bootstrap.js']
-=======
-                exclude: ['bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js']
-            },
-            sass: {
-                src: ['<%= config.app %>/styles/{,*/}*.{scss,sass}']
->>>>>>> b80124ae22185bcc8be3679e6cc6f33b2c938b08
             }
         },
 
@@ -341,13 +289,8 @@ module.exports = function (grunt) {
                 }, {
                     expand: true,
                     dot: true,
-<<<<<<< HEAD
                     cwd: 'bower_components/bootstrap/dist',
                     src: ['fonts/*.*'],
-=======
-                    cwd: '.',
-                    src: ['bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/*.*'],
->>>>>>> b80124ae22185bcc8be3679e6cc6f33b2c938b08
                     dest: '<%= config.dist %>'
                 }]
             },
@@ -360,43 +303,15 @@ module.exports = function (grunt) {
             }
         },
 
-<<<<<<< HEAD
         // Run some tasks in parallel to speed up build process
         concurrent: {
             server: [
-=======
-        // Generates a custom Modernizr build that includes only the tests you
-        // reference in your app
-        modernizr: {
-            dist: {
-                devFile: 'bower_components/modernizr/modernizr.js',
-                outputFile: '<%= config.dist %>/scripts/vendor/modernizr.js',
-                files: {
-                    src: [
-                        '<%= config.dist %>/scripts/{,*/}*.js',
-                        '<%= config.dist %>/styles/{,*/}*.css',
-                        '!<%= config.dist %>/scripts/vendor/*'
-                    ]
-                },
-                uglify: true
-            }
-        },
-
-        // Run some tasks in parallel to speed up build process
-        concurrent: {
-            server: [
-                'sass:server',
->>>>>>> b80124ae22185bcc8be3679e6cc6f33b2c938b08
                 'copy:styles'
             ],
             test: [
                 'copy:styles'
             ],
             dist: [
-<<<<<<< HEAD
-=======
-                'sass',
->>>>>>> b80124ae22185bcc8be3679e6cc6f33b2c938b08
                 'copy:styles',
                 'imagemin',
                 'svgmin'
@@ -448,10 +363,6 @@ module.exports = function (grunt) {
         'cssmin',
         'uglify',
         'copy:dist',
-<<<<<<< HEAD
-=======
-        'modernizr',
->>>>>>> b80124ae22185bcc8be3679e6cc6f33b2c938b08
         'rev',
         'usemin',
         'htmlmin'
