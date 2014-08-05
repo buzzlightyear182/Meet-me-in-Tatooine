@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Meet Me App</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="/favicon.ico">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
@@ -21,30 +21,38 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <main>
-            <div class="container">
-                <header class="header">
-                        <ul class="nav nav-pills pull-right">
+            <header class="header" class="top" role="header">
+                <a href="#" class="navbar-brand pull-left">
+                    meet me in Tatooine
+                </a>
+                <div class="container-fluid">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="glyphicon glyphicon-align-justify"></span>
+                    </button>
+                    <nav class="navbar-collapse collapse" role="navigation">
+                        <ul class="navbar-nav nav">
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="form.html">New</a></li>
                             <li><a href="show.html">Show</a></li>
                             <li><a href="#">Contact</a></li>
-                        </ul>   
-                    <h3 class="text-muted">meet me in Tatooine</h3>
-               </header>
-
-                <article id="view" class="jumbotron">
-                    <h1>Welcome in Tatooine!</h1>
-                    <p class="lead">Always a pleasure to meet new people in Tatooine.</p>
-                    </p>
-                </article>
-
-                <div class="footer">
-                    <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+                        </ul>
+                    </nav>
+                    <button class="btn btn-default" data-toggle="collapse" data-target=".navbar-collapse" id="geolocation_button">
+                        Get geolocation
+                    </button>
                 </div>
+           </header>
 
+            <article id="view" class="jumbotron">
+                <h1>Welcome in Tatooine!</h1>
+                <p class="lead">Always a pleasure to meet new people in Tatooine.</p>
+                <img id="map"/>
+                <div id="location_info"></div>
+            </article>
+
+            <div class="footer">
+                <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
             </div>
-        </main>
 
 
         <!-- build:js scripts/vendor.js -->
